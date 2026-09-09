@@ -152,3 +152,31 @@
     color: var(--color-foreground);
   }
 }
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+  }
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+  }
+}
+
+@utility surface-card {
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-card);
+}
+
+@utility hero-ink {
+  background-image: var(--gradient-hero);
+  color: var(--ink-foreground);
+}
+
+@utility brand-gradient-text {
+  background-image: var(--gradient-brand);
+  background-clip: text;
+  color: transparent;
+}

@@ -354,7 +354,9 @@ export function Calculator() {
                 />
                 <Select value={stateCode} onValueChange={setStateCode}>
                   <SelectTrigger>
-                    <SelectValue />
+                    <SelectValue placeholder="Select state">
+                      {stateInfo ? `${stateInfo.name} — ${stateInfo.incomeTax}%` : "Select state"}
+                    </SelectValue>
                   </SelectTrigger>
                   <SelectContent className="max-h-72">
                     {US_STATES.map((s) => (

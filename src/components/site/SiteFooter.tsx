@@ -18,7 +18,7 @@ type ModalKey = "privacy" | "terms" | "disclaimer" | "about" | null;
 const PRIVACY = [
   "SavingsPro US does not require an account and does not store the numbers you enter. All calculations run locally in your browser and are discarded when you close the tab.",
   "We use privacy-friendly analytics to count page views and understand which sections readers use. We may serve advertising through Google AdSense. Google and its partners may use cookies or device identifiers to serve ads based on your prior visits to this or other websites.",
-  "You can opt out of personalised advertising at any time through Google Ads Settings. Residents of California (CCPA/CPRA) and the EU/UK (GDPR) may request access to or deletion of any personal data we hold by contacting us at privacy@savingspro.example.",
+  "You can opt out of personalised advertising at any time through Google Ads Settings. Residents of California (CCPA/CPRA) and the EU/UK (GDPR) may request access to or deletion of any personal data we hold by contacting us at savingsprous@gmail.com.",
   "Children under 13 should not use this site. We do not knowingly collect information from children.",
 ];
 
@@ -109,7 +109,7 @@ export function SiteFooter() {
           <h3 className="text-sm font-semibold uppercase tracking-wider opacity-90">Contact</h3>
           <ul className="mt-4 space-y-3 text-sm opacity-75">
             <li className="flex items-start gap-2">
-              <Mail className="mt-0.5 h-4 w-4 shrink-0" /> hello@savingspro.example
+              <Mail className="mt-0.5 h-4 w-4 shrink-0" /> savingsprous@gmail.com
             </li>
             <li className="flex items-start gap-2">
               <MapPin className="mt-0.5 h-4 w-4 shrink-0" /> 1200 Market Street, Suite 400

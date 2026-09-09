@@ -127,7 +127,9 @@ export interface CalcResult {
   monthsToGoal: number | null;
 }
 
-const state = (code: string) => US_STATES.find((s) => s.code === code) ?? US_STATES[0];
+const FALLBACK_STATE: StateInfo = { code: "TX", name: "Texas", incomeTax: 0, capGainsTax: 0 };
+const state = (code: string): StateInfo =>
+  US_STATES.find((s) => s.code === code) ?? FALLBACK_STATE;
 
 export function monthlyBase(i: CalcInput) {
   const base = i.biweekly ? (i.monthlyContribution * 26) / 12 : i.monthlyContribution;

@@ -42,7 +42,7 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 import { FieldLabel, InfoTip } from "@/components/site/InfoTip";
-import { AdSlot } from "@/components/site/AdSlot";
+
 import {
   ACCOUNTS,
   US_STATES,
@@ -589,8 +589,6 @@ export function Calculator() {
             </div>
           </div>
 
-          <AdSlot label="Mid-content responsive unit" size="728×90" />
-
           {/* CHART */}
           <div className="surface-card p-5 sm:p-6">
             <div className="flex flex-wrap items-center justify-between gap-3">
@@ -698,10 +696,6 @@ export function Calculator() {
                 </div>
               ))}
             </dl>
-          </div>
-
-          <div className="lg:sticky lg:top-24">
-            <AdSlot label="Sidebar sticky unit" size="300×600" className="min-h-[420px]" />
           </div>
         </div>
       </div>

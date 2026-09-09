@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Mail, MapPin, PiggyBank, ShieldCheck } from "lucide-react";
+import { Mail, PiggyBank, ShieldCheck } from "lucide-react";
 import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -110,11 +110,6 @@ export function SiteFooter() {
           <ul className="mt-4 space-y-3 text-sm opacity-75">
             <li className="flex items-start gap-2">
               <Mail className="mt-0.5 h-4 w-4 shrink-0" /> savingsprous@gmail.com
-            </li>
-            <li className="flex items-start gap-2">
-              <MapPin className="mt-0.5 h-4 w-4 shrink-0" /> 1200 Market Street, Suite 400
-              <br />
-              Philadelphia, PA 19107
             </li>
             <li className="flex items-start gap-2">
               <ShieldCheck className="mt-0.5 h-4 w-4 shrink-0" /> Educational use only — not advice

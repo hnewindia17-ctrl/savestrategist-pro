@@ -10,7 +10,7 @@ import {
 } from "@/components/ui/accordion";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { SiteFooter } from "@/components/site/SiteFooter";
-import { AdSlot } from "@/components/site/AdSlot";
+
 import { Calculator } from "@/components/savings/Calculator";
 
 const TITLE = "US Savings & Retirement Calculator with State Tax | SavingsPro US";
@@ -73,10 +73,6 @@ function Home() {
     <TooltipProvider>
       <div id="top" className="min-h-screen bg-background">
         <SiteHeader />
-
-        <div className="mx-auto max-w-7xl px-4 pt-4 sm:px-6">
-          <AdSlot label="Header leaderboard" size="970×90" />
-        </div>
 
         {/* HERO */}
         <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:py-16">
@@ -212,10 +208,6 @@ function Home() {
             </div>
           </article>
         </section>
-
-        <div className="mx-auto mt-14 max-w-4xl px-4 sm:px-6">
-          <AdSlot label="In-article unit" size="336×280" />
-        </div>
 
         {/* FAQ */}
         <section id="faqs" className="mx-auto mt-16 max-w-4xl px-4 sm:px-6">

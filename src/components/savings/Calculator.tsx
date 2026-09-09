@@ -42,7 +42,7 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 import { FieldLabel, InfoTip } from "@/components/site/InfoTip";
-import { AdSlot } from "@/components/site/AdSlot";
+
 import {
   ACCOUNTS,
   US_STATES,
@@ -588,8 +588,6 @@ export function Calculator() {
               )}
             </div>
           </div>
-
-          <AdSlot label="Mid-content responsive unit" size="728×90" />
 
           {/* CHART */}
           <div className="surface-card p-5 sm:p-6">

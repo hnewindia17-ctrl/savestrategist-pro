@@ -697,10 +697,6 @@ export function Calculator() {
               ))}
             </dl>
           </div>
-
-          <div className="lg:sticky lg:top-24">
-            <AdSlot label="Sidebar sticky unit" size="300×600" className="min-h-[420px]" />
-          </div>
         </div>
       </div>
 

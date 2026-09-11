@@ -13,9 +13,9 @@ import { SiteFooter } from "@/components/site/SiteFooter";
 
 import { Calculator } from "@/components/savings/Calculator";
 
-const TITLE = "US Savings & Retirement Calculator with State Tax | SavingsPro US";
+const TITLE = "Financial Savings Calculator | US Retirement & Investment Calculator — SavingsPro US";
 const DESC =
-  "Free US savings calculator: model 401(k) match, Roth vs Traditional IRA, state taxes, inflation and market scenarios, then see compound growth year by year.";
+  "Free financial savings calculator and US retirement savings calculator. Compare 401(k), Roth IRA and taxable accounts, factor in state tax and inflation, and model your investment growth in the USA.";
 
 export const Route = createFileRoute("/")({
   head: () => ({

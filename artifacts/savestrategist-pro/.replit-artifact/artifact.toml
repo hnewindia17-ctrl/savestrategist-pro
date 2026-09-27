@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "SavingsPro US Calculator"
+description = "A responsive US financial savings and retirement calculator with tax, inflation, employer match, account comparison, educational content, and legal information for American savers."
+version = "1.0.0"
+id = "artifacts/savestrategist-pro"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 21762
+
+[services.development]
+run = "pnpm --filter @workspace/savestrategist-pro run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/savestrategist-pro", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/savestrategist-pro/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "21762"
+BASE_PATH = "/"
